@@ -9,6 +9,6 @@ sudo pip install requests
 
 sudo pip install pattern
 
-python html2Article http://www.baidu.com
+python html2Article.py http://www.baidu.com
 
 ENJOY!
