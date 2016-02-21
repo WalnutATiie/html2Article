@@ -10,9 +10,10 @@ class Html2Article:
     def html_2_Plaintext(self,html):
         #text = re.sub(r"(?is)<.*?>","",html)
         text = plaintext(html,keep=[],replace='',linebreaks=1, indentation=False)
-        print text
+        #print text
+	return text
 if __name__ =="__main__":
     H = HtmlGetter()
     html = H.get_html_from_url(sys.argv[1])
     m = Html2Article()
-    m.html_2_Plaintext(html)
+    print m.html_2_Plaintext(html)
